@@ -1,1 +1,3 @@
 # FOOD-MANAGEMENT-SYSTEM
+
+This project made using flask which is python framework used for web development using Python programming language.In this project i have managed to create log in credentials,CRUD operations. For Login credentials i have use the session which is nothing but the time between user log in and log out of the sysetem, During this time session will provide the different ID for different users, due to that we can differentiate between multiple users. To store data i have used SQL as backend, also by using facillities present in SQL i also managed to create Admin and Customer.
