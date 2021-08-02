@@ -1,0 +1,14 @@
+#imge{
+     
+    display: block;
+    margin-left: 274px;
+    margin-right: auto;
+    object-fit: cover;
+    margin-bottom: -155px;
+   
+  }
+  body{
+    background-image: url("backindex.jpg");
+    object-fit: cover;
+  
+}

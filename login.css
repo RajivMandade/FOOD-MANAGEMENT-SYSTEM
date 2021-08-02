@@ -1,0 +1,20 @@
+#login{
+    margin-left: 397px;
+    margin-top: 119px;
+    background-color: rgba(35, 53, 53, 0.966);
+}
+body{
+    background-image: url("login.jpg");
+}
+#new{
+    font-style:italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.animate__animated{
+    font-size: 100px;
+    
+    color: black;
+    margin-left: 399px;
+    margin-top: -291px;
+    
+} 
