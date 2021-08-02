@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="{{url_for('index')}}">INDEX</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{url_for('update')}}">UPDATE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('display')}}">DISPLAY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('logout')}}">LOGOUT</a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <br>
+              
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="imge" src="static\food4.jpg" class="col-md-6 " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imge" src="static\food2.jpg" class="col-md-6" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imge" src="static\food3.jpg" class="col-md-6" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <br>
+              <div class="card text-center">
+                <div class="card-header">
+                  WELCOME IN APPLICATION
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">One cannot think well, love well, sleep well, if one has not dined well</h5>
+                  <p class="card-text">ORDER FOOD NOW</p>
+                  <a href="{{url_for('menu')}}" class="btn btn-primary">SEE THE MENU</a>
+                </div>
+                <div class="card-footer text-muted">
+                  INDIA
+                </div>
+              </div>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>
